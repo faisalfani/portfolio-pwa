@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio.</title>
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#5d002f" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./img/Icon-72.png" />
+    <link rel="apple-touch-icon" href="/img/Icon-192.png" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo"> Portfolio.</a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="../img/1_RoXcbaF9lIqwpMjiXg54Vw.png" />
+      </div>
+    </div>
+
+    <div id="content"></div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="center-align">
+        <p>Copyright &copy;2020 Handle with ❤️ | Faisal Al Isfahani</p>
+      </div>
+    </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then(() => {
+              console.log("pendaftaran service worer berhasil");
+            })
+            .catch(() => {
+              console.log("pendaftaran service worker gagal");
+            });
+        });
+      } else {
+        console.log("service worker belum di dukung pada browser ini");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".parallax");
+        M.Parallax.init(elems);
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/54cced3ecd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

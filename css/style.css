@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+  background-color: #5d002f;
+}
+
+.topnav,
+.sidenav {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.sidenav {
+  background-color: #fedcc8;
+  padding: 3rem 0;
+}
+
+.topnav li {
+  margin-right: 20px;
+}
+.header {
+  height: 60vh;
+  width: auto;
+  margin-top: -60vh;
+  color: #5d002f;
+}
+.parallax-container {
+  width: 100%;
+}
+
+.headtext {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+}
+
+.headtext h5 {
+  font-family: "Raleway", sans-serif;
+  color: #d0002f;
+}
+
+#service {
+  margin: 15vh auto;
+}
+
+/* service */
+.service h5 {
+  font-weight: 600;
+  color: #5d002f;
+}
+.service p {
+  font-family: "Raleway", sans-serif;
+  padding: 5px 15px;
+  color: #d0002f;
+  text-align: justify;
+  font-size: medium;
+}
+
+.single-service {
+  height: 100px;
+}
+
+.footer {
+  font-family: "Raleway", sans-serif;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 5vh;
+  background-color: #5d002f;
+}
+.footer p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* about me section */
+.about {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #5d002f;
+  padding: 5vh;
+}
+
+.about-me h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.experiences {
+  color: #5d002f;
+  padding: 5vh;
+  background-color: #fedcc8;
+  font-family: "Raleway", sans-serif;
+}
+.education {
+  padding: 10px 10%;
+}
+
+.education .title {
+  font-weight: bold;
+}
+
+/* works */
+
+.works {
+  font-family: "Raleway", sans-serif;
+  color: #5d002f;
+}
+
+.work {
+  padding: 5vh 0 10vh 0;
+}
+
+.frame {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  perspective: 500px;
+}
+
+.frame .desc {
+  margin-bottom: 20px;
+}
+
+.work .btn {
+  background-color: #ff3a13;
+}
+
+.frame img {
+  width: 350px;
+  height: 350px;
+}
+.frame .details {
+  color: #fedcc8;
+  background-color: #5d002f;
+  width: 70%;
+  height: 80%;
+  padding: 5% 8%;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  transform-origin: 50%;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.frame:hover .details {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+
+/* contact section */
+.git {
+  color: #5d002f;
+
+  font-family: "Raleway", sans-serif;
+  padding: 10vh 0;
+}
+
+#textarea2:focus {
+  border-bottom: 1px solid #d0002f;
+}
+
+.btn-send {
+  background-color: #5d002f;
+}
+
+.btn-large:hover {
+  background-color: #d0002f;
+}
+
+#email:focus,
+#full_name:focus,
+label:focus {
+  border-bottom: 1px solid #d0002f;
+}
+
+.sosmed a {
+  color: #5d002f;
+  font-size: 2rem;
+}
+
+.sosmed p {
+  margin-top: 10px;
+}
